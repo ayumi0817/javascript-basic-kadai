@@ -1,4 +1,8 @@
-const Weight=68;
-const Hight=1.7;
+
+let Weight;
+Weight=68;
+
+let Hight;
+Hight=1.7;
 
 console.log(Weight/(Hight*Hight))
