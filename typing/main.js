@@ -27,15 +27,23 @@
   'programming'
 ];
 
+<<<<<<< HEAD
  // ランダムなテキストを表示
  const createText = () =>{
+=======
+>>>>>>> origin6/main
 
 //正タイプした文字列をクリア
 typed="";
 typedfield.textContent=typed;
 
 
+<<<<<<< HEAD
 
+=======
+ // ランダムなテキストを表示
+ const createText = () =>{
+>>>>>>> origin6/main
   let random = Math.floor(Math.random()*textLists.length);
   untyped = textLists[random];
   untypedfield.textContent = untyped;
@@ -60,13 +68,20 @@ typedfield.textContent=typed;
     untyped = untyped.substring(1);
     typedfield.textContent=typed;
     untypedfield.textContent=untyped;
+<<<<<<< HEAD
   
+=======
+  };
+>>>>>>> origin6/main
 
 // テキストがなくなったら新しいテキストを表示
 if(untyped===""){
   createText();
 }
+<<<<<<< HEAD
 };
+=======
+>>>>>>> origin6/main
  
   // タイピングスキルのランクを判定
   const rankCheck = score => {
