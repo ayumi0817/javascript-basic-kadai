@@ -442,6 +442,11 @@ p {
         height: 200px;
     }
 
+    /*追加分*/
+    #prefecture{
+        margin-left:40px;
+    }
+
     /* 個人情報の取り扱い */
     details {
         width: 700px;

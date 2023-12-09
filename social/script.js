@@ -50,7 +50,7 @@ $('#submit').on('click', function (event) {
               alert('お問い合わせを送信できませんでした。')
             }
           })
-          
+
       } else {
         // エラーメッセージを表示する
         alert(message);
@@ -92,7 +92,7 @@ $('#submit').on('click', function (event) {
        //お名前のチェック
        if ($("#name").val() == ""){
         //エラーあり
-        $("name").css("background-color", "#f79999")
+        $("#name").css("background-color", "#f79999")
         error = true;
         message += "お名前を入力してください。\n";
 
@@ -149,6 +149,19 @@ $('#submit').on('click', function (event) {
         error = true;
         message += '個人情報の取り扱いについてご同意いただける場合は、チェックボックスにチェックしてください。\n';
       }
+
+      //追加分       
+      //都道府県のチェック
+             if ($("#prefecture").val() == ""){
+                //エラーあり
+                $("#prefecture").css("background-color", "#f79999")
+                error = true;
+                message += "都道府県を選択してください。\n";
+        
+               } else{
+                //エラーなし
+                $('#prefecture').css('background-color', '#fafafa');
+               }
 
            // エラーの有無で送信ボタンを切り替え
      if (error == true) {
